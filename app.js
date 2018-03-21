@@ -1,9 +1,11 @@
 // carrega configurações do servidor
 var app = require('./config/server');
 
-var homeRoute = require('./app/routes/home')(app);
-var noticiasRoute = require('./app/routes/noticias')(app);
-var add_noticiaRoute = require('./app/routes/add_noticias')(app);
+// var homeRoute = require('./app/routes/home')(app);
+// var noticiasRoute = require('./app/routes/noticias')(app);
+// var add_noticiaRoute = require('./app/routes/add_noticias')(app);
+
+
 
 // app.get('/', home.home);
 
