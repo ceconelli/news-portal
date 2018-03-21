@@ -7,8 +7,8 @@ module.exports = function(app){
 
         // busca todos os elementos no db e envia para o ejs
         var connection = app.config.dbConnection();
-        var noticiasModel = app.app.models.noticiasModel;
-        noticiasModel.getNoticias(connection,function(error,result){
+        var noticiasModel = new app.app.models.noticiasModel(connection);
+        noticiasModel.getNoticias(function(error,result){
             // response.send(result);
             response.render("noticias/noticias",{noticias : result});
         });
